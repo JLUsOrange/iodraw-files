@@ -22,10 +22,10 @@
         <mxCell id="n4" value="编排管控与&#xa;异常兜底" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="780" y="300" width="180" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="n5" value="迭代优化与&#xa;扩展" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F5AA6;strokeColor=#1F4E79;fontColor=#FFFFFF;fontSize=18;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="n5" value="迭代优化与&#xa;扩展" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="980" y="300" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="goal" value="&lt;b&gt;最终目标&lt;/b&gt;&lt;br&gt;&lt;br&gt;智能应用集成部署&#xa;自动化、&#xa;适配化、稳定化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4D03F;strokeColor=#D4AC0D;fontColor=#7D3C00;fontSize=18;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="goal" value="&lt;b&gt;最终目标&lt;/b&gt;&lt;br&gt;&lt;br&gt;智能应用集成部署&#xa;自动化、&#xa;适配化、稳定化" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="1180" y="235" width="180" height="190" as="geometry" />
         </mxCell>
         <mxCell id="top1" value="场景数据与需求反馈" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9DDE3;strokeColor=#A6ACAF;fontColor=#1F3A5F;fontSize=16;fontStyle=1;" parent="1" vertex="1">
@@ -64,7 +64,7 @@
         <mxCell id="e_n4_n5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#F39C12;strokeWidth=4;endArrow=block;endFill=1;" parent="1" source="n4" target="n5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_n5_goal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#F4B400;strokeWidth=5;endArrow=block;endFill=1;" parent="1" source="n5" target="goal" edge="1">
+        <mxCell id="e_n5_goal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;endArrow=block;endFill=1;" parent="1" source="n5" target="goal" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e_base_top1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7D93A6;strokeWidth=2;dashed=1;endArrow=block;endFill=1;" parent="1" source="base" target="top1" edge="1">
