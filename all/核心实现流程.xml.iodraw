@@ -1,0 +1,84 @@
+<mxfile host="www.iodraw.com" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram id="core-flow-01" name="核心实现流程图">
+    <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t1" value="智能应用集成部署核心实现流程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="20" width="620" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="开始&#xa;需求触发" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=15;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="840" y="90" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="step1" value="第一步：应用生成需求与环境感知&#xa;• 在线生成应用功能定义、模块组成、性能要求&#xa;• 采集边云端硬件、网络、负载、安全状态&#xa;• 拆解为边端侧模块与插件模块&#xa;• 提取应用特征并同步至智能决策层" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="560" y="200" width="740" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="step2" value="第二步：智能部署决策&#xa;• 评估边端侧部署 / 插件嵌入部署 / 混合部署&#xa;• 根据实时性、资源消耗、扩展性选择最优方式&#xa;• 明确部署位置、资源分配、插件集成方案&#xa;• 制定灰度 / 滚动 / 热更新等发布策略" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="560" y="370" width="740" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="step3" value="第三步：异构集成部署实施&#xa;• 云边协同部署：模块分发、安装、配置、启动&#xa;• 插件嵌入部署：注册、集成、调试、交付&#xa;• 部署协同组件保障通信顺畅与数据同步" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="560" y="540" width="740" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="step4" value="第四步：安全发布上线&#xa;• 边端侧模块：滚动发布&#xa;• 插件模块：热更新发布&#xa;• 核心应用：灰度发布后全量发布&#xa;• 全程执行身份认证、数据加密、完整性校验" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="560" y="700" width="740" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="decision1" value="是否发生应用重构&#xa;（功能新增 / 模块替换 / 架构调整）？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="760" y="860" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="step5" value="第五步：重构适配与动态调整&#xa;• 感知重构需求并拆解新模块&#xa;• 更新应用特征并重新决策&#xa;• 新增模块部署、旧模块平滑替换、无用模块删除&#xa;• 调整发布方式，保障服务连续性" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="870" width="620" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="step6" value="第六步：优化迭代&#xa;• 持续采集资源利用率、响应速度、插件状态、故障率&#xa;• 分析问题与优化空间&#xa;• 优化决策算法、发布策略、资源分配与模块协同&#xa;• 形成部署-监控-分析-优化闭环" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="560" y="1060" width="740" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="结束 / 进入下一轮持续演进" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=15;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="820" y="1240" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="monitor" value="运行监控组件&#xa;实时采集运行状态与部署效果" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;dashed=1;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1350" y="710" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=2;" parent="1" source="start" target="step1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=2;" parent="1" source="step1" target="step2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=2;" parent="1" source="step2" target="step3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=2;" parent="1" source="step3" target="step4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=2;" parent="1" source="step4" target="decision1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=2;" parent="1" source="decision1" target="step5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=2;" parent="1" source="decision1" target="step6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=2;" parent="1" source="step5" target="step6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=2;" parent="1" source="step6" target="end" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="监控数据" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=2;dashed=1;strokeColor=#666666;" parent="1" source="step4" target="monitor" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="反馈优化" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=2;dashed=1;strokeColor=#666666;" parent="1" source="monitor" target="step6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" value="重新决策" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=2;dashed=1;strokeColor=#9673a6;" parent="1" source="step5" target="step2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1430" y="650" />
+              <mxPoint x="1430" y="435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
